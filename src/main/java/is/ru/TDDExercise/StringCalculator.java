@@ -3,7 +3,7 @@ package is.ru.TDDExercise;
 
 public class StringCalculator {
     
-	public static int Add(string numbers)
+	public static int Add(String numbers)
 	{
 		if(numbers == "")
 		{
@@ -11,7 +11,7 @@ public class StringCalculator {
 		}
 		else
 		{
-			
+			return 1;
 		}
 	}
 	
