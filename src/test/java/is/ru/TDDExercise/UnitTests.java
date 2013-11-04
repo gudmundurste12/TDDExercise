@@ -7,7 +7,11 @@ import org.junit.Test;
 public class UnitTests {
 
     @Test
-    public void greetResultsInHello() {
-        assertEquals(true, true);
+    public void TestAdd() {
+        
+		assertEquals(StringCalculator.Add(""), 0);
+		
+		assertEquals(StringCalculator.Add("1"), 1);
+		assertEquals(StringCalculator.Add("2"), 2);
     }
 }
