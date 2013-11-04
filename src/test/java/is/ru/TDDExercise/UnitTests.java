@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 
-public class WorldTest {
+public class UnitTests {
 
     @Test
     public void greetResultsInHello() {
