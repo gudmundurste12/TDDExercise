@@ -11,13 +11,18 @@ public class StringCalculator {
 			String[] theStrings = numbers.split(",");
 			if(theStrings.length == 1)
 			{
-				return Integer.parseInt(theStrings[0]);
+				return ParseInt(theStrings[0]);
 			}
 			else
 			{
-				return Integer.parseInt(theStrings[0]) + Integer.parseInt(theStrings[1]);
+				return ParseInt(theStrings[0]) + ParseInt(theStrings[1]);
 			}
 		}
+	}
+	
+	public static int ParseInt(String theString)
+	{
+		return Integer.parseInt(theString);
 	}
 	
 /*	
