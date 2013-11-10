@@ -9,13 +9,10 @@ public class StringCalculator {
 		}
 		else {
 			String[] theStrings = numbers.split(",");
-			if(theStrings.length == 1)
+			int returnValue = 0;
+			for(String s : theStrings)
 			{
-				return ParseInt(theStrings[0]);
-			}
-			else
-			{
-				return ParseInt(theStrings[0]) + ParseInt(theStrings[1]);
+				returnValue += ParseInt(ParseInt(s));
 			}
 		}
 	}
