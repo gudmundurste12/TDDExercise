@@ -1,5 +1,5 @@
 package is.ru.TDDExercise;
-
+import java.lang.*;
 
 public class StringCalculator {
     
@@ -8,7 +8,15 @@ public class StringCalculator {
 			return 0;
 		}
 		else {
-			return 1;
+			String[] theStrings = numbers.split(",");
+			if(theStrings.length == 1)
+			{
+				return Integer.parseInt(theStrings[0]);
+			}
+			else
+			{
+				return Integer.parseInt(theStrings[0]) + Integer.parseInt(theStrings[1]);
+			}
 		}
 	}
 	

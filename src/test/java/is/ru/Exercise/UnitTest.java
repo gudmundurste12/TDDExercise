@@ -6,18 +6,25 @@ import org.junit.Test;
 
 public class UnitTest {
 
-	
 	@Test
-	public void TestAdd_EmptyString() {
+	public void TestAdd_EmptyString() 
+	{
 		assertEquals(StringCalculator.Add(""), 0);
 	}
 	
 	@Test
-	public void TestAdd_OneNumber() {
+	public void TestAdd_OneNumber() 
+	{
 		assertEquals(StringCalculator.Add("1"), 1);
 		assertEquals(StringCalculator.Add("2"), 2);
 	}
 	
-	
-	
+	@Test
+	public void TestAdd_TwoNumbers()
+	{
+		assertEquals(StringCalculator.Add("1,1"), 2);
+		assertEquals(StringCalculator.Add("1,2"), 3);
+		assertEquals(StringCalculator.Add("2,1"), 3);
+		assertEquals(StringCalculator.Add("0,0"), 0);
+	}	
 }
