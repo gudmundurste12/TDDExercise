@@ -12,8 +12,10 @@ public class StringCalculator {
 			int returnValue = 0;
 			for(String s : theStrings)
 			{
-				returnValue += ParseInt(ParseInt(s));
+				returnValue += ParseInt(s);
 			}
+			
+			return returnValue;
 		}
 	}
 	
